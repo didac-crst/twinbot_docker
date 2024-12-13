@@ -7,4 +7,5 @@ services:
     env_file:
       - .env
     volumes:
-      - ${twinbot_agent}/twinbot/logs/:/app/logs/
+      - ${SYSHOME}/twinbot/logs/:/app/logs/
+    network_mode: "host"

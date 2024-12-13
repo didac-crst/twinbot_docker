@@ -13,13 +13,10 @@ COPY ./ /app/
 RUN pip install -r requirements.txt
 
 # Install cryptobot_core
-RUN /bin/bash -c "pip install git@github.com:didac-crst/ollama_telegrambot_api.git"
-
-# Install cryptobot_scraper
-RUN pip install .
+RUN /bin/bash -c "pip install git+https://github.com/didac-crst/ollama_telegrambot_api.git"
 
 # Set the environment variable for the Python buffer
 ENV PYTHONUNBUFFERED=1
 
 # Start the server
-CMD ["unbuffer", "python", "src/telegram_agent.py"]
+CMD ["unbuffer", "python", "src/twinbot_agent.py"]

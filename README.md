@@ -1,4 +1,4 @@
-# Ollama TelegramBot Docker
+# Twinbot Docker
 
 This repository provides a docker that runs the Ollama Telegrambot API.
 
