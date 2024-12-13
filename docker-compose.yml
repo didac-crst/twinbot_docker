@@ -1,0 +1,10 @@
+services:
+  twinbot_agent:
+    container_name: twinbot_agent
+    restart: unless-stopped
+    image: twinbot_agent_img
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ${twinbot_agent}/twinbot/logs/:/app/logs/
