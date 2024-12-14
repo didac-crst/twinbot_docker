@@ -25,11 +25,11 @@ LOGGER_DIRECTORY_PATH: str = "/app/logs/"
 # Disclaimer messages are sent to users to inform them about the bot's capabilities and limitations
 DISCLAIMER_MESSAGE = (
     "<b>✨ Didac's Digital Twinbot ✨</b>\n\n"
-    "Welcome to the Twinbot! This AI-powered assistant 🤖 is a fun proof of concept 🚀, created using Ollama 🦙 and trained on data inspired by my real-life experiences 🌟.\n"
-    "To keep things safe and private 🔒, I've carefully curated the dataset to avoid sharing too much personal information 🤫.\n"
-    "To interact with the Twinbot, simply ask any question you’d like to know about me 💬.\n\n"
-    "<i>As this is an experimental setup 🛠️ running on compact and energy-efficient hardware 🔋, the Twinbot operates on a Raspberry Pi 5 💻 (without a GPU 🧠). This may result in slightly longer response times ⏳.</i>\n\n"
-    "Thanks for your patience and enjoy the experience! 😉"
+    "Welcome 👋 to the Twinbot! This AI-powered assistant 🤖 is a proof of concept 🚀, created using Ollama 🦙 and trained on data inspired by my real-life experiences 🌟.\n\n"
+    "To ensure safety and privacy 🔒, the dataset has been carefully curated 🧐 to avoid sharing sensitive personal information 🤫.\n\n"
+    "You can interact with the Twinbot 💬 by asking any question ❓ you'd like to know about me 🤔.\n\n"
+    "<i>As this is an experimental 🧪 setup running on compact, energy-efficient 🔋 hardware — specifically a Raspberry Pi 5 💻 without a GPU 🧠 — execution times may be slightly longer ⏳.</i>\n\n"
+    "Thank you 🙏 for your patience, and enjoy the experience! 😉"
 )
 # Minimum time between disclaimer messages (in seconds)
 MIN_TIME_BETWEEN_DISCLAIMERS = 3 * 24 * 60 * 60  # 3 days
