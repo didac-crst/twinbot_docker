@@ -22,19 +22,20 @@ LOGGER_NAME: str = "ollama_chatbot"
 # Logger directory path - Path to the directory where the log file will be stored
 LOGGER_DIRECTORY_PATH: str = "/app/logs/"
 
-# Disclaimer messages are sent to users to inform them about the bot's capabilities and limitations
-DISCLAIMER_MESSAGE = (
-    "<b>✨ Didac's Digital Twinbot ✨</b>\n\n"
-    "Welcome 👋 to the Twinbot! This AI-powered assistant 🤖 is a proof of concept 🚀, created using Ollama 🦙 and trained on data inspired by my real-life experiences 🌟.\n\n"
-    "To ensure safety and privacy 🔒, the dataset has been carefully curated 🧐 to avoid sharing sensitive personal information 🤫.\n\n"
-    "You can interact with the Twinbot 💬 by asking any question ❓ you'd like to know about me 🤔.\n\n"
-    "<i>As this is an experimental 🧪 setup running on compact, energy-efficient 🔋 hardware — specifically a Raspberry Pi 5 💻 without a GPU 🧠 — execution times may be slightly longer ⏳.</i>\n\n"
-    "Thank you 🙏 for your patience, and enjoy the experience! 😉"
-)
+# File path to the disclaimer message
+DISCLAIMER_FILE_PATH = "/app/disclaimer.txt"
 # Minimum time between disclaimer messages (in seconds)
 MIN_TIME_BETWEEN_DISCLAIMERS = 3 * 24 * 60 * 60  # 3 days
 
+# Read txt file
+def read_txt(file_path: str) -> str:
+    with open(file_path, "r") as f:
+        return f.read()
+
 def main() -> None:
+    # Read disclaimer message from file
+    DISCLAIMER_MESSAGE = read_txt(DISCLAIMER_FILE_PATH)
+    
     Agent = TelegramAgent(
         ollama_url=OLLAMA_URL,
         ollama_model=OLLAMA_MODEL,
