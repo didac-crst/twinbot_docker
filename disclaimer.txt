@@ -6,6 +6,8 @@ To ensure safety and privacy 🔒, the dataset has been carefully curated 🧐 t
 
 You can interact with the Twinbot 💬 by asking any question ❓ you'd like to know about me 🤔.
 
-<i>As this is an experimental 🧪 setup operating on compact, energy-efficient 🔋 hardware — specifically a Raspberry Pi 5 💻 without a GPU 🧠 — running times may be slightly longer 🐢. But hey, good things are worth the wait ⏳.</i>
+<i>Please note 📌 that as a chat-based language model, the Twinbot might occasionally produce inaccurate responses or hallucinations 🤯. While it strives for accuracy, it remains an experimental 🧪 system.</i>
+
+<i>As the model runs on compact, energy-efficient 🔋 hardware — specifically a Raspberry Pi 5 💻 without a GPU 🧠 — running times may be slightly longer 🐢. But hey, good things are worth the wait ⏳.</i>
 
 Thank you 🙏 for playing along 🎲, and enjoy the experience! 😉
